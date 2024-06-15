@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/738d42c4b5.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="container">
+      <form>
+        <div class="content">
+          <label>Enter Name</label>
+          <input
+            type="text"
+            placeholder="Enter your name"
+            id="name"
+            onkeyup="displayName()"
+          />
+          <span id="name-error"></span>
+        </div>
+        <div class="content">
+          <label>Enter phone</label>
+          <input type="number" placeholder="Enter your mobile" id="phone" onkeyup="displayPhone()" />
+          <span id="phone-error"></span>
+        </div>
+        <div class="content">
+          <label>Enter email</label>
+          <input type="email" placeholder="Enter your email" id="email" onkeyup="displayEmail()"/>
+          <span id="email-error"></span>
+        </div>
+        <div class="content">
+          <label>Your Msg</label>
+          <textarea rows="5" placeholder=" Enter your message" id="message" onkeyup="displayMsg()"></textarea>
+          <span id="msg-error"></span>
+        </div>
+        <div class="content-button">
+          <button onclick="return validateForm()"><a href="https://www.youtube.com/watch?v=fz8bwvn9lA4&list=PLjwm_8O3suyOgDS_Z8AWbbq3zpCmR-WE9&index=16">Submit</a></button>
+          <span id="submit-error"></span>
+        </div>
+      </form>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
